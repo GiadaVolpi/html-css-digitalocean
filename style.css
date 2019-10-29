@@ -3,6 +3,7 @@ body {
     font-size: 16px;
 }
 
+/*** inizio FIRST HEADER ***/
 #my-first-header {
     height: 40px;
     font-size: 12px;
@@ -18,6 +19,7 @@ body {
 
 .my-first-header-left a {
     padding-left: 10px;
+    color: #5b6987;
 }
 
 .my-first-header-left a:hover {
@@ -43,9 +45,65 @@ body {
 .my-main-menu ul li {
     padding-right: 25px;
 }
+/*** fine FIRST HEADER ***/
 
+/*** inizio SECOND HEADER ***/
+#my-second-header {
+    height: 55px;
+    visibility: hidden;
+}
+
+#my-second-header #logo, #my-second-header .my-navbar, #my-second-header .btn-signup {
+    display: inline-block;
+}
+
+#logo img {
+    height: 30px;
+    margin: 10px 0 10px 30px;
+}
+
+.my-navbar {
+    margin-left: 55px;
+    line-height: 55px;
+}
+
+.my-navbar ul li {
+    padding-right: 12px;
+    color: #031b4e;
+}
+
+.my-navbar ul li:hover {
+    cursor: pointer;
+    color: #0069ff;
+}
+
+#my-second-header .my-navbar .fas.fa-chevron-down {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.my-btn-signup button {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0069ff;
+    border-radius: 5px;
+    border: 1px solid #0069ff;
+    padding: 5px 15px;
+}
+
+.my-btn-signup button:hover {
+    background-color: #0069ff;
+    color: white;
+}
+
+/*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 1024px) {
     #my-first-header {
+        visibility: visible;
+    }
+
+    #my-second-header {
         visibility: visible;
     }
 }
