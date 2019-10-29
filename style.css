@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#my-first-header {
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5b6987;
+    border-bottom: 1px solid rgba(219,219,219,0.6);
+    visibility: hidden;
+}
+
+.my-first-header-left {
+    padding: 10px 0 10px 30px;
+}
+
+.my-first-header-left a {
+    padding-left: 10px;
+}
+
+.my-first-header-left a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #0069ff;
+}
+
+.my-btn-primary {
+    color: #031b4e;
+    background-color: #00d7d2;
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+}
+
+.my-first-header-right {
+    line-height: 40px;
+}
+
+.my-main-menu ul li {
+    padding-right: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    #my-first-header {
+        visibility: visible;
+    }
+}
