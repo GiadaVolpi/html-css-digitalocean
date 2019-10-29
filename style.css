@@ -3,14 +3,21 @@ body {
     font-size: 16px;
 }
 
+.my-text-bold {
+    font-weight: bold;
+}
+
+.my-pointer:hover {
+    cursor: pointer;
+}
+
 /*** inizio FIRST HEADER ***/
 #my-first-header {
     height: 40px;
     font-size: 12px;
-    font-weight: bold;
     color: #5b6987;
     border-bottom: 1px solid rgba(219,219,219,0.6);
-    visibility: hidden;
+    display: none;
 }
 
 .my-first-header-left {
@@ -23,7 +30,6 @@ body {
 }
 
 .my-first-header-left a:hover {
-    cursor: pointer;
     text-decoration: none;
     color: #0069ff;
 }
@@ -34,7 +40,6 @@ body {
     border-radius: 5px;
     border: none;
     font-size: 10px;
-    font-weight: 700;
     padding: 3px 8px;
 }
 
@@ -50,7 +55,7 @@ body {
 /*** inizio SECOND HEADER ***/
 #my-second-header {
     height: 55px;
-    visibility: hidden;
+    display: none;
 }
 
 #my-second-header #logo, #my-second-header .my-navbar, #my-second-header .btn-signup {
@@ -73,7 +78,6 @@ body {
 }
 
 .my-navbar ul li:hover {
-    cursor: pointer;
     color: #0069ff;
 }
 
@@ -85,7 +89,6 @@ body {
 .my-btn-signup button {
     background-color: transparent;
     font-size: 16px;
-    font-weight: bold;
     color: #0069ff;
     border-radius: 5px;
     border: 1px solid #0069ff;
@@ -96,14 +99,71 @@ body {
     background-color: #0069ff;
     color: white;
 }
+/*** fine SECOND HEADER ***/
+
+/*** inizio JUMBO ***/
+#jumbo {
+    height: 750px;
+    background-color: #0069ff;
+    background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    background-position: bottom;
+}
+
+.my-main-menu-xs {
+    height: 95px;
+    display: block;
+}
+
+.logo-device-xs img {
+    height: 30px;
+    margin-top: 55px;
+}
+
+.hamburger-menu {
+    margin-top: 55px;
+    font-size: 25px;
+}
+
+.hamburger-menu i {
+    color: rgba(255, 255, 255, .6);
+}
+
+.my-jumbo-text {
+    padding: 180px 0;
+}
+
+#jumbo h1 {
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+    color: rgba(255, 255, 255, .8);
+}
+
+
+
+
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 1024px) {
     #my-first-header {
-        visibility: visible;
+        display: block;
     }
 
     #my-second-header {
-        visibility: visible;
+        display: block;
     }
+
+    .my-main-menu-xs {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
 }
