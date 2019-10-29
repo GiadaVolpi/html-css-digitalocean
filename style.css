@@ -3,6 +3,10 @@ body {
     font-size: 16px;
 }
 
+.my-centered {
+    margin: 0 auto;
+}
+
 .my-text-bold {
     font-weight: bold;
 }
@@ -10,6 +14,23 @@ body {
 .my-pointer:hover {
     cursor: pointer;
 }
+
+.my-text-grey {
+    color: rgba(3, 27, 28, .7);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #031B4E;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #031B4E;
+}
+/*** fine generali ***/
 
 /*** inizio FIRST HEADER ***/
 #my-first-header {
@@ -101,7 +122,7 @@ body {
 }
 /*** fine SECOND HEADER ***/
 
-/*** inizio JUMBO ***/
+/*** inizio JUMBO TEXT ***/
 #jumbo {
     height: 750px;
     background-color: #0069ff;
@@ -142,10 +163,92 @@ p {
     font-size: 25px;
     color: rgba(255, 255, 255, .8);
 }
+/*** fine JUMBO TEXT ***/
 
+/*** inizio JUMBO INPUT ***/
+.my-jumbo-input {
+    margin: 120px 0 120px 75px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: white;
+}
 
+.my-jumbo-input h3 {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
 
+.form-group input {
+    width: 85%;
+    border: 1px solid rgba(219,219,219,0.6);
+    border-radius: 6px;
+    padding: 15px
+}
 
+.my-btn-account {
+    width: 85%;
+    background-color: #0069ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.my-btn-account:hover {
+    background-color: #1633ff;
+}
+
+.my-divider {
+    width: 85%;
+    height: 50px;
+}
+
+.my-divider {
+    line-height: 50px;
+    position: relative;
+    font-size: 16px;
+}
+
+.my-divider::before {
+    width: 30%;
+    height: 1px;
+    background-color: rgba(219,219,219,0.6);
+    content: "";
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0
+}
+
+.my-divider::after {
+    width: 30%;
+    height: 1px;
+    background-color: rgba(219,219,219,0.6);
+    content: "";
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.row.duble-button {
+    weight: 85%;
+}
+
+.my-btn-google, .my-btn-github {
+    width: 40%;
+    padding: 12px;
+}
+
+.my-btn-google {
+    margin-right: 2%;
+}
+
+.my-btn-github {
+    margin-left: 2%;
+}
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 1024px) {
@@ -158,10 +261,6 @@ p {
     }
 
     .my-main-menu-xs {
-        display: none;
-    }
-
-    .hamburger-menu {
         display: none;
     }
 
