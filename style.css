@@ -322,7 +322,7 @@ header .navbar-fixed-top {
 }
 
 .introduction-quality p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .quality-left {
@@ -357,6 +357,39 @@ header .navbar-fixed-top {
     font-size: 35px;
     margin-bottom: 10px;
 }
+
+#for-developers p {
+    font-size: 22px;
+}
+
+#for-developer .slider {
+    position: relative;
+}
+
+.slider img {
+    margin-top: 50px;
+}
+
+.slider a i.fas.fa-chevron-left, .slider a i.fas.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+}
+
+.slider a i.fas.fa-chevron-left {
+    right: 102%;
+    color: rgba(3, 27, 78, .5);
+}
+
+.slider a i.fas.fa-chevron-right {
+    left: 102%;
+    color: #031B4E;
+}
+
+
+
+
 
 
 
