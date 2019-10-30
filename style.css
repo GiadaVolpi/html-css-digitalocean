@@ -16,15 +16,23 @@ body {
 }
 
 .my-text-grey {
-    color: rgba(3, 27, 28, .7);
+    color: rgba(3, 27, 78, .7);
+}
+
+.my-text-lightgrey {
+    color: rgba(3, 27, 78, .5);
 }
 
 .my-text-blue {
     color: #0069ff;
 }
 
-.section-grey {
+.grey-section {
     background-color: #f3f5f9;
+    padding: 120px 0;
+}
+
+.white-section {
     padding: 120px 0;
 }
 
@@ -39,9 +47,20 @@ h3 {
     font-weight: 700;
     color: #031B4E;
 }
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #031B4E;
+}
 /*** fine generali ***/
 
 /*** inizio FIRST HEADER ***/
+header .navbar-fixed-top {
+    background-color: white;
+    display: none;
+}
+
 #my-first-header {
     height: 40px;
     font-size: 12px;
@@ -133,6 +152,7 @@ h3 {
 /*** inizio JUMBO TEXT ***/
 #jumbo {
     background-color: #0248ff;
+    z-index: 1;
 }
 
 .my-main-menu-xs {
@@ -266,7 +286,7 @@ h3 {
 /*** fine JUMBO INPUT ***/
 
 /*** inizio CUSTOMERS ***/
-#customers.section-grey {
+#customers.grey-section {
     padding: 64px 0;
 }
 
@@ -293,8 +313,52 @@ h3 {
 
 #customers a:hover {
     text-decoration: none;
-    color: #0069ff;
 }
+/*** fine CUSTOMERS ***/
+
+/*** inizio QUALITY ***/
+#quality.white-section {
+    padding-bottom: 64px;
+}
+
+.introduction-quality p {
+    font-size: 20px;
+}
+
+.quality-left {
+    margin-top: 50px;
+}
+
+.quality-left blockquote {
+    line-height: 40px;
+    border-left: 2px solid #eee;
+    margin-bottom: 0;
+}
+
+.quality-left blockquote:first-child {
+    border-left: 2px solid #0069ff;
+    color: #031B4E;
+}
+
+.quality-right {
+    margin-top: 50px;
+}
+
+.quality-right-top {
+    margin-bottom: 30px;
+}
+
+.block-quality-right img {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.block-quality-right i.fas, .block-quality-right i.far {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 768px) {
@@ -318,7 +382,7 @@ h3 {
     .img-clienti {
         width: 16%;
     }
-    
+
     .img-clienti img {
         max-width: 70%;
     }
@@ -338,12 +402,25 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        display: block;
+        background-color: white;
+        z-index: 10;
+    }
+
     #my-first-header {
         display: block;
+        background-color: white;
     }
 
     #my-second-header {
         display: block;
+        background-color: white;
+    }
+
+    #jumbo {
+        margin-top: 114px;
+        z-index: 1;
     }
 
     .my-main-menu-xs {
@@ -355,7 +432,6 @@ h3 {
     .container {
         width: 1200px;
     }
-
     #jumbo h1 {
         font-size: 62px;
     }
