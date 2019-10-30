@@ -23,6 +23,11 @@ body {
     color: #0069ff;
 }
 
+.section-grey {
+    background-color: #f3f5f9;
+    padding: 120px 0;
+}
+
 h2 {
     font-size: 36px;
     font-weight: 700;
@@ -160,7 +165,7 @@ h3 {
     color: white;
 }
 
-p {
+#jumbo p {
     font-size: 25px;
     color: rgba(255, 255, 255, .8);
 }
@@ -258,7 +263,38 @@ p {
 .my-footer-jumbo {
     padding: 25px 0;
 }
+/*** fine JUMBO INPUT ***/
 
+/*** inizio CUSTOMERS ***/
+#customers.section-grey {
+    padding: 64px 0;
+}
+
+.img-clienti {
+    display: inline-block;
+    width: 45%;
+    height: 100px;
+    position: relative;
+}
+
+.img-clienti img {
+    object-fit: contain;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#customers a i {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#customers a:hover {
+    text-decoration: none;
+    color: #0069ff;
+}
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 768px) {
@@ -278,6 +314,15 @@ p {
     .my-jumbo-input {
         margin: 120px 0 120px 75px;
     }
+
+    .img-clienti {
+        width: 16%;
+    }
+    
+    .img-clienti img {
+        max-width: 70%;
+    }
+
 }
 
 @media screen and (min-width: 875px) {
