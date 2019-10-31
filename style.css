@@ -426,6 +426,11 @@ header .navbar-fixed-top {
     font-size: 14px;
     padding-left: 10px;
 }
+
+#for-business .col-md-3 a:hover {
+    text-decoration: none;
+    color: #0069ff;
+}
 /*** fine FOR-BUSINESS ***/
 
 /*** inizio World ***/
@@ -466,6 +471,11 @@ header .navbar-fixed-top {
 #world table .test-speed {
     color: #00d7d2;
     font-size: 13px;
+}
+
+#world table .test-speed:hover {
+    cursor: pointer;
+    color: #0069ff;
 }
 
 #world table .test-speed i {
