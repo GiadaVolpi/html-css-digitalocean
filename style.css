@@ -29,11 +29,11 @@ body {
 
 .grey-section {
     background-color: #f3f5f9;
-    padding: 120px 0;
+    padding: 50px 0;
 }
 
 .white-section {
-    padding: 120px 0;
+    padding: 50px 0;
 }
 
 h2 {
@@ -360,57 +360,16 @@ header .navbar-fixed-top {
 /*** fine QUALITY ***/
 
 /*** inizio FOR-DEVELOPER ***/
-.container.text-center p:first-child  {
+#for-developers p.dev-big {
     font-size: 22px;
 }
-
-/* SLIDE CON BOOTSTRAP */
-.slide {
-    position: relative;
-}
-
-.slide img {
-    margin-top: 50px;
-    max-height: 400px;
-}
-
-li.my-previous-disable a {
-    position: absolute;
-    top: 50%;
-    right: 96%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-}
-
-li.my-previous-disable i {
-    color: rgba(3, 27, 78, .5);
-    font-size: 25px;
-}
-
-li.my-next a {
-    position: absolute;
-    top: 50%;
-    left: 96%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-}
-
-li.my-next i {
-    color: #031B4E;
-    font-size: 25px;
-}
-*/
-
-/* SLIDE SENZA BOOTSTRAP*/
 
 #for-developer .slide {
     position: relative;
 }
 
 .slide img {
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .slide a i.fas.fa-chevron-left, .slide a i.fas.fa-chevron-right {
@@ -441,14 +400,33 @@ li.my-next i {
     background-color: #0069ff;
 }
 
-
 /*** fine FOR-DEVELOPERS ***/
 
+/*** inizio FOR-BUSINESS ***/
+#for-business .four-blocks {
+    margin-top: 40px;
+}
 
+#for-business div.col-xs-12.col-sm-6.col-md-3 {
+    padding: 30px 15px 0 15px;
+}
 
+#for-business .col-md-3 i {
+    font-size: 40px;
+}
 
+#for-business .col-md-3 h4 {
+    line-height: 35px;
+}
 
+#for-business .col-md-3 a {
+    line-height: 25px;
+}
 
+#for-business .col-md-3 a i {
+    font-size: 14px;
+    padding-left: 10px;
+}
 
 
 /*** inizio MEDIA QUERY ***/
@@ -478,11 +456,20 @@ li.my-next i {
         max-width: 70%;
     }
 
+    .white-section, .grey-section {
+        padding: 120px 0;
+    }
 }
 
 @media screen and (min-width: 875px) {
     #jumbo h1 {
         font-size: 46px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #for-business div.col-xs-12.col-sm-6.col-md-3 {
+        padding: 0 15px;
     }
 }
 
@@ -523,6 +510,7 @@ li.my-next i {
     .container {
         width: 1200px;
     }
+
     #jumbo h1 {
         font-size: 62px;
     }
