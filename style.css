@@ -357,35 +357,93 @@ header .navbar-fixed-top {
     font-size: 35px;
     margin-bottom: 10px;
 }
+/*** fine QUALITY ***/
 
-#for-developers p {
+/*** inizio FOR-DEVELOPER ***/
+.container.text-center p:first-child  {
     font-size: 22px;
 }
 
-#for-developer .slider {
+/* SLIDE CON BOOTSTRAP */
+.slide {
     position: relative;
 }
 
-.slider img {
+.slide img {
+    margin-top: 50px;
+    max-height: 400px;
+}
+
+li.my-previous-disable a {
+    position: absolute;
+    top: 50%;
+    right: 96%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+}
+
+li.my-previous-disable i {
+    color: rgba(3, 27, 78, .5);
+    font-size: 25px;
+}
+
+li.my-next a {
+    position: absolute;
+    top: 50%;
+    left: 96%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+}
+
+li.my-next i {
+    color: #031B4E;
+    font-size: 25px;
+}
+*/
+
+/* SLIDE SENZA BOOTSTRAP*/
+
+#for-developer .slide {
+    position: relative;
+}
+
+.slide img {
     margin-top: 50px;
 }
 
-.slider a i.fas.fa-chevron-left, .slider a i.fas.fa-chevron-right {
+.slide a i.fas.fa-chevron-left, .slide a i.fas.fa-chevron-right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 35px;
 }
 
-.slider a i.fas.fa-chevron-left {
+.slide a i.fas.fa-chevron-left {
     right: 102%;
     color: rgba(3, 27, 78, .5);
 }
 
-.slider a i.fas.fa-chevron-right {
+.slide a i.fas.fa-chevron-right {
     left: 102%;
     color: #031B4E;
 }
+
+.my-dot {
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid #0069ff;
+    margin: 0 6px
+}
+
+.is-selected {
+    background-color: #0069ff;
+}
+
+
+/*** fine FOR-DEVELOPERS ***/
+
 
 
 
