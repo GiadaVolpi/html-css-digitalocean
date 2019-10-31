@@ -399,7 +399,6 @@ header .navbar-fixed-top {
 .is-selected {
     background-color: #0069ff;
 }
-
 /*** fine FOR-DEVELOPERS ***/
 
 /*** inizio FOR-BUSINESS ***/
@@ -427,7 +426,52 @@ header .navbar-fixed-top {
     font-size: 14px;
     padding-left: 10px;
 }
+/*** fine FOR-BUSINESS ***/
 
+/*** inizio World ***/
+#world {
+    background: #031b4e url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
+}
+
+#world h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#world h2, #world table th {
+    color: white;
+}
+
+#world table {
+    width: 100%;
+}
+
+#world .row .col-sm-6 {
+    padding-bottom: 50px;
+}
+
+#world .my-table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#world .my-table tr {
+    line-height: 40px;
+}
+
+#world table .destination {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+#world table .test-speed {
+    color: #00d7d2;
+    font-size: 13px;
+}
+
+#world table .test-speed i {
+    margin-left: 10px;
+    font-size: 10px;
+}
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 768px) {
@@ -458,6 +502,15 @@ header .navbar-fixed-top {
 
     .white-section, .grey-section {
         padding: 120px 0;
+    }
+
+    #world h2 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    #world .row .col-sm-6 {
+        padding-bottom: 100px;
     }
 }
 
