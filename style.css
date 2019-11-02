@@ -227,11 +227,14 @@ header .navbar-fixed-top {
 }
 
 .my-btn-account {
-    width: 85%;
-    background-color: #0069ff;
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+.my-blue-btn-jumbo {
+    width: 85%;
+    background-color: #0069ff;
     padding: 15px;
 }
 
@@ -395,7 +398,7 @@ p.subtitle {
 }
 
 .horizontal-dots {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .my-dot {
@@ -501,14 +504,87 @@ p.subtitle {
     padding-top: 30px;
     margin-bottom: 50px;
 }
+/*** fine FEEDBACK ***/
 
+/*** inizio BEGINS ***/
+#begins {
+    background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    background-position: bottom;
+    padding: 20px 0;
+}
 
+.begins-content {
+    padding: 50px 0;
+}
 
+.begins-content h3 {
+    color: white;
+    margin-bottom: 30px;
+}
 
+.my-btn-begins {
+    color: #0069ff;
+    background-color: #f3f5f9;
+    padding: 15px 35px;
+}
 
+.my-btn-begins:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+/*** fine BEGINS ***/
 
+/*** inizio FOOTER ***/
+footer {
+    background-color: #010e28;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.footer-top ol li {
+    list-style-type: none;
+    font-size: 14px;
+}
 
+.footer-top ol li:not(:first-child) {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 28px;
+}
+
+.footer-top ol li:not(:first-child):hover, .footer-bottom .social-footer a i:hover {
+    color: white;
+}
+
+.footer-top ol li:first-child {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer-top ol {
+    padding-left: 0;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom img {
+    height: 50px;
+    margin: 15px;
+}
+
+.footer-bottom .social-footer a i, .footer-bottom small  {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom .social-footer a i {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/*** fine FOOTER ***/
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 768px) {
@@ -537,7 +613,7 @@ p.subtitle {
         max-width: 70%;
     }
 
-    .white-section, .grey-section {
+    .white-section, .grey-section, footer {
         padding: 120px 0;
     }
 
