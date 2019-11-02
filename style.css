@@ -36,10 +36,27 @@ body {
     padding: 50px 0;
 }
 
+.go-to {
+    font-size: 16px;
+    color: #0069ff;
+    font-weight: bold;
+}
+
+.go-to:hover {
+    text-decoration: none;
+    color: #0069ff;
+}
+
+.little-right-arrow {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 h2 {
     font-size: 36px;
     font-weight: 700;
     color: #031B4E;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -305,15 +322,6 @@ header .navbar-fixed-top {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-#customers a i {
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-#customers a:hover {
-    text-decoration: none;
-}
 /*** fine CUSTOMERS ***/
 
 /*** inizio QUALITY ***/
@@ -321,8 +329,9 @@ header .navbar-fixed-top {
     padding-bottom: 64px;
 }
 
-.introduction-quality p {
+p.subtitle {
     font-size: 22px;
+    color: rgba(3, 27, 78, .7);
 }
 
 .quality-left {
@@ -360,10 +369,6 @@ header .navbar-fixed-top {
 /*** fine QUALITY ***/
 
 /*** inizio FOR-DEVELOPER ***/
-#for-developers p.dev-big {
-    font-size: 22px;
-}
-
 #for-developer .slide {
     position: relative;
 }
@@ -372,21 +377,25 @@ header .navbar-fixed-top {
     margin: 50px 0;
 }
 
-.slide a i.fas.fa-chevron-left, .slide a i.fas.fa-chevron-right {
+.arrow-going-back, .arrow-go-on {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 35px;
 }
 
-.slide a i.fas.fa-chevron-left {
+.arrow-going-back {
     right: 102%;
-    color: rgba(3, 27, 78, .5);
+    color: rgba(3, 27, 78, .3);
 }
 
-.slide a i.fas.fa-chevron-right {
+.arrow-go-on {
     left: 102%;
     color: #031B4E;
+}
+
+.horizontal-dots {
+    margin-top: 20px;
 }
 
 .my-dot {
@@ -406,34 +415,20 @@ header .navbar-fixed-top {
     margin-top: 40px;
 }
 
-#for-business div.col-xs-12.col-sm-6.col-md-3 {
-    padding: 30px 15px 0 15px;
+#for-business div.col-xs-12.col-sm-6.col-md-3 p {
+    padding-right: 20px;
 }
 
-#for-business .col-md-3 i {
+#for-business .fb-icon {
     font-size: 40px;
 }
 
 #for-business .col-md-3 h4 {
     line-height: 35px;
 }
-
-#for-business .col-md-3 a {
-    line-height: 25px;
-}
-
-#for-business .col-md-3 a i {
-    font-size: 14px;
-    padding-left: 10px;
-}
-
-#for-business .col-md-3 a:hover {
-    text-decoration: none;
-    color: #0069ff;
-}
 /*** fine FOR-BUSINESS ***/
 
-/*** inizio World ***/
+/*** inizio WORLD ***/
 #world {
     background: #031b4e url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
 }
@@ -482,6 +477,38 @@ header .navbar-fixed-top {
     margin-left: 10px;
     font-size: 10px;
 }
+/*** fine WORLD ***/
+
+/*** inizio FEEDBACK ***/
+#feedback .feedback-content {
+    background-color: white;
+    border: 1px solid rgba(3, 27, 78, .1);
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+
+.feedback-content img {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.feedback-content p {
+    font-size: 26px;
+}
+
+.feedback-slide .feedback-content .fd-story {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
 
 /*** inizio MEDIA QUERY ***/
 @media screen and (min-width: 768px) {
